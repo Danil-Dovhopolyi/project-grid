@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+
+.pagination {
+  @include flex-center;
+  gap: map.get($spacing, sm);
+  margin-top: map.get($spacing, lg);
+
+  button {
+    transition: all map.get($transitions, fast) ease-in-out;
+    
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+    }
+    
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+  }
+}
+
+.pagination-ellipsis {
+  color: map.get($colors, text, secondary);
+  padding: 0 map.get($spacing, sm);
+}
