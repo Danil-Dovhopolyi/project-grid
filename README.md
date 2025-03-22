@@ -1,54 +1,106 @@
-# React + TypeScript + Vite
+## Main Features
+- Real estate project grid display
+- Responsive design
+- Pagination for project navigation
+- Optimized image loading
+- Image slider with keyboard navigation support
+- Accessibility according to WCAG standards
+- High contrast mode support
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+- React 18
+- TypeScript
+- SCSS
+- Jest + React Testing Library
+- Vite
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+```
+src/
+├── api/               # API integration layer
+├── components/        # React components
+├── hooks/            # Custom React hooks
+├── styles/           # Global styles and SCSS modules
+├── types/            # TypeScript type definitions
+├── utils/            # Utility functions
+├── __mocks__/        # Jest mocks
+├── __tests__/        # Test files
+├── App.tsx           # Main application component
+├── App.scss          # Main application styles
+├── main.tsx          # Application entry point
+└── setupTests.ts     # Test setup configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation and Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Requirements
+- Node.js 16+
+- npm or yarn
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Installation
+```bash
+# Clone repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+# or
+yarn install
 ```
+
+### Running the Project
+```bash
+# Development mode
+npm run dev
+# or
+yarn dev
+
+# Run tests
+npm test
+# or
+yarn test
+
+# Run tests with coverage
+npm run test:coverage
+# or
+yarn test:coverage
+```
+
+## Implementation Details
+
+### Image Optimization
+- Automatic image scaling based on screen size
+- Retina display support
+- Lazy loading implementation
+- Optimized image caching
+
+### Accessibility
+- ARIA attributes for all interactive elements
+- Keyboard navigation support
+- Semantic HTML structure
+- High contrast mode support
+
+### Testing
+- Component unit tests
+- Utility function tests
+- Test coverage > 80%
+- Accessibility testing
+
+### Styling
+- Modular SCSS styles
+- CSS variables for colors and dimensions
+- Responsive design with breakpoints
+- Animations and transitions
+
+## API Integration
+The project integrates with an API for fetching project data. Required environment variables:
+```
+VITE_API_URL=
+VITE_API_ACCESS_KEY=
+VITE_API_SECRET_KEY=
+```
+
+## Performance Optimization
+- Component code splitting
+- Image optimization
+- Component memoization

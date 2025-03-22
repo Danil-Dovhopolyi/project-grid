@@ -1,0 +1,34 @@
+@use "sass:map";
+@use "variables" as *;
+
+// Focus styles
+.project-card:focus-within {
+    outline: 2px solid map.get($colors, primary);
+    outline-offset: 2px;
+}
+
+.image-slider:focus {
+    outline: 2px solid map.get($colors, primary);
+    outline-offset: 2px;
+}
+
+.button:focus-visible {
+    outline: 2px solid map.get($colors, primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(map.get($colors, primary), 0.2);
+}
+
+// High contrast mode support
+@media (forced-colors: active) {
+    .project-card {
+        border: 1px solid CanvasText;
+    }
+
+    .button {
+        border: 1px solid ButtonText;
+    }
+
+    .indicator-dot.active {
+        background-color: Highlight;
+    }
+}
