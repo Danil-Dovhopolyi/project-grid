@@ -1,0 +1,42 @@
+$colors: (
+  primary: #006d77,
+  accent: #ff6b6b,
+  text: (
+    primary: #2d3436,
+    secondary: #636e72,
+    light: #b2bec3
+  ),
+  background: (
+    primary: white,
+    secondary: #f8f9fa,
+    hover: rgba(0, 0, 0, 0.05)
+  ),
+  border: #e9ecef,
+  error: #d32f2f
+);
+
+$spacing: (
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+  xl: 40px
+);
+
+$breakpoints: (
+  sm: 768px,
+  md: 1024px
+);
+
+$border-radius: (
+  sm: 4px,
+  md: 8px,
+  lg: 12px,
+  xl: 20px
+);
+
+$transitions: (
+  fast: 0.2s,
+  medium: 0.3s,
+  slow: 0.5s
+);

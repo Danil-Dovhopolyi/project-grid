@@ -1,0 +1,86 @@
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+
+.project-card {
+  border-radius: map.get($border-radius, lg);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background-color: map.get($colors, background, primary);
+  @include card-hover;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: map.get($spacing, md);
+
+  &:active {
+    transform: translateY(-2px);
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .content-top {
+    margin-bottom: map.get($spacing, lg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: map.get($spacing, xs);
+  }
+
+  .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: map.get($colors, text, primary);
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .project-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: map.get($colors, accent);
+    margin: 0;
+    text-align: right;
+  }
+
+  .project-address {
+    width: 100%;
+    @include flex-center;
+    justify-content: flex-start;
+    gap: map.get($spacing, xs);
+    color: map.get($colors, text, secondary);
+    font-size: 16px;
+    margin-top: map.get($spacing, sm);
+  }
+
+  .project-details {
+    display: flex;
+    justify-content: flex-start;
+    gap: map.get($spacing, xl);
+    margin-top: auto;
+
+    .detail-item {
+      @include flex-center;
+      gap: map.get($spacing, xs);
+      color: map.get($colors, text, light);
+      font-size: 16px;
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: calc(-#{map.get($spacing, xl)} / 2);
+        height: 100%;
+        width: 1px;
+        background-color: map.get($colors, border);
+      }
+    }
+  }
+}

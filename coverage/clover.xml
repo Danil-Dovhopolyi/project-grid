@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1742580716996" clover="3.2.0">
+  <project timestamp="1742580716997" name="All files">
+    <metrics statements="103" coveredstatements="98" conditionals="46" coveredconditionals="32" methods="30" coveredmethods="29" elements="179" coveredelements="159" complexity="0" loc="103" ncloc="103" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="60" coveredstatements="57" conditionals="25" coveredconditionals="21" methods="18" coveredmethods="17"/>
+      <file name="Button.tsx" path="C:\dekstop\Profile\Profile\Test Tasks\project-grid\src\components\Button.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="19" count="45" type="stmt"/>
+        <line num="20" count="45" type="stmt"/>
+        <line num="26" count="45" type="stmt"/>
+        <line num="32" count="45" type="stmt"/>
+        <line num="40" count="45" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+      <file name="ImageSlider.tsx" path="C:\dekstop\Profile\Profile\Test Tasks\project-grid\src\components\ImageSlider.tsx">
+        <metrics statements="52" coveredstatements="49" conditionals="19" coveredconditionals="18" methods="17" coveredmethods="16"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="33" type="stmt"/>
+        <line num="20" count="33" type="stmt"/>
+        <line num="21" count="33" type="stmt"/>
+        <line num="22" count="33" type="stmt"/>
+        <line num="24" count="33" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="27" count="12" type="stmt"/>
+        <line num="28" count="12" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="33" count="11" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="43" count="33" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="47" count="33" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="51" count="33" type="stmt"/>
+        <line num="52" count="4" type="cond" truecount="4" falsecount="1"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="70" count="33" type="stmt"/>
+        <line num="71" count="33" type="stmt"/>
+        <line num="73" count="33" type="stmt"/>
+        <line num="74" count="12" type="stmt"/>
+        <line num="80" count="36" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="96" count="33" type="stmt"/>
+        <line num="97" count="30" type="stmt"/>
+        <line num="98" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="100" count="30" type="stmt"/>
+        <line num="117" count="33" type="stmt"/>
+        <line num="137" count="1" type="stmt"/>
+        <line num="138" count="1" type="stmt"/>
+        <line num="149" count="1" type="stmt"/>
+        <line num="150" count="1" type="stmt"/>
+        <line num="178" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="43" coveredstatements="41" conditionals="21" coveredconditionals="11" methods="12" coveredmethods="12"/>
+      <file name="imageLoader.ts" path="C:\dekstop\Profile\Profile\Test Tasks\project-grid\src\utils\imageLoader.ts">
+        <metrics statements="43" coveredstatements="41" conditionals="21" coveredconditionals="11" methods="12" coveredmethods="12"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="17" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="27" count="16" type="stmt"/>
+        <line num="28" count="16" type="stmt"/>
+        <line num="33" count="16" type="cond" truecount="0" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="16" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="8" type="stmt"/>
+        <line num="43" count="8" type="cond" truecount="2" falsecount="2"/>
+        <line num="45" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="46" count="8" type="stmt"/>
+        <line num="47" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="52" count="8" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="60" count="8" type="stmt"/>
+        <line num="62" count="8" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="72" count="9" type="stmt"/>
+        <line num="73" count="9" type="cond" truecount="3" falsecount="0"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="77" count="8" type="stmt"/>
+        <line num="78" count="8" type="stmt"/>
+        <line num="80" count="8" type="stmt"/>
+        <line num="81" count="8" type="stmt"/>
+        <line num="83" count="8" type="stmt"/>
+        <line num="84" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="86" count="6" type="stmt"/>
+        <line num="91" count="6" type="stmt"/>
+        <line num="94" count="8" type="stmt"/>
+        <line num="95" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="103" count="4" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="108" count="6" type="stmt"/>
+        <line num="109" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
